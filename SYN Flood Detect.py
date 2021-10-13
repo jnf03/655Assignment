@@ -56,8 +56,9 @@ def pkt_addtoDict(dst, src):
 
 #SYN FLAG
 #flags = 'S'
+# sniff function below that is used for sniffing the TCP packets as per the parameter is from the Scapy library that we have imported.
 sniff(prn=pkt_callback, filter="tcp", store=0)
-#prn: function to apply to each packet. If something is returned, it is displayed
+#prn: function to apply to each packet. If something is returned, it is displayed. 
 #filter: filtering necessary packets
 #store=0: doesn't store anything in memory
 
